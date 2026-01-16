@@ -29,7 +29,7 @@ const projects: Project[] = [
     links: {
       demo: "https://maison-l-3.myshopify.com",
     },
-    image: "assets/images/#.jpg"
+    image: "assets/images/maison-l.png"
   },
   {
     title: "Jeu vidéo - Lulu's Quest",
@@ -46,9 +46,10 @@ const projects: Project[] = [
       Votre mission est d'atteindre le coeur de la planète, là où les deux pourront le réparer et sauver le monde. Serez-vous prêt à affronter tous les obstacles qui se dresseront sur leur chemin ?
       </>,
     links: {
-      demo: "https://example.com",
+      demo: "https://gouttedo.itch.io/lulus-quest",
+      github: "https://github.com/GoutteDooo/Lulu-s-Quest-PICO"
     },
-    image: "assets/images/#.jpg"
+    image: "assets/images/lulu-pico.png"
   },
   {
     title: "API Bibliotheque - Full stack",
@@ -131,6 +132,23 @@ const projects: Project[] = [
       github: "https://github.com/GoutteDooo/LesEcuriesdelaSelle/tree/main"
     },
     image: "assets/images/lesecuriesdelaselle.png"
+  },
+  {
+    title: "Site Web Front end - Intellicook",
+    stack: ["React", "SCSS"],
+    objective: "Concevoir et développer en équipe de 4 à partir de zéro la partie front-end d'un site web pour une fausse entreprise",
+    status: "Terminé",
+    description:
+      <>
+      Partie front-end du site web de la fake entreprise "Intellicook" réalisée avec React et SCSS.
+      <br />
+      Projet réalisé en équipe de 4, où l'esprit d'équipe et la communication étaient de mise.
+      </>,
+    links: {
+      demo: "https://intellicook.netlify.app",
+      github: "https://github.com/GoutteDooo/Brief-IntelliCook"
+    },
+    image: "assets/images/intellicook.png"
   },
 ];
 
