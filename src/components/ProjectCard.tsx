@@ -5,7 +5,7 @@ export interface Project {
   stack: string[];
   objective: string;
   status: "En développement" | "Terminé" | "En pause";
-  description: string;
+  description: html;
   links?: {
     demo?: string;
     github?: string;
@@ -62,7 +62,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <p className="text-body text-foreground">{project.objective}</p>
           </div>
 
-          <p className="text-body text-muted-foreground mb-6">{project.description}</p>
+          <div className="text-body text-muted-foreground mb-6">{project.description}</div>
 
           {project.links && (
             <div className="flex items-center gap-4">
