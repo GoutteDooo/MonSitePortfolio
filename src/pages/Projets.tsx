@@ -75,6 +75,27 @@ const projects: Project[] = [
     image: "assets/images/api-bibliotheque.png"
   },
   {
+    title: "Prototype de Jeu vidéo - Let There Be Light",
+    stack: ["C#", ".NET", "Unity"],
+    objective: "Concevoir et créer un prototype de jeu vidéo fun sous un délai extrêmement court de 4 jours.",
+    status: "Terminé",
+    description:
+      <>
+      Le Projet a été réalisée en équipe. J'ai collaboré avec Hazel Cunuder, ma camarade de formation.
+      <br />
+      La difficulté principale fut de réussir à boucler le gameplay. Nous y sommes parvenus dés lors que nous avons eu l'idée de le faire via une state machine.
+      <br />
+      La state machine, qui agit en tant que Singleton pour être toujours présente, change d'état à chaque phase de jeu : Playing, Victory, Defeat, Menu, Pause, Completed et d'autres...
+      <br />
+      Projet réalisé en formation chez Simplon
+      </>,
+    links: {
+      demo: "Pas de lien pour le moment",
+      github: "https://github.com/GoutteDooo/Let_There_Be_Light_Simplon"
+    },
+    image: "assets/images/ltbl.png"
+  },
+  {
     title: "API de Restaurant - Full stack",
     stack: ["C#", ".NET", "ASP.NET", "React", "EFCore", "PostgreSQL"],
     objective: "Concevoir et développer une API intuitive pour un faux restaurant.",
@@ -91,7 +112,7 @@ const projects: Project[] = [
       demo: "Pas de lien pour le moment",
       github: "https://github.com/GoutteDooo/RestauSimplon",
     },
-    image: "assets/images/api-bibliotheque.png"
+    image: "assets/images/restausimplon.png"
   },
   {
     title: "Application Console - Duel De Guerrier",
