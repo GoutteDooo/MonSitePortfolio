@@ -93,7 +93,7 @@ const projects: Project[] = [
       demo: "Pas de lien pour le moment",
       github: "https://github.com/GoutteDooo/Let_There_Be_Light_Simplon"
     },
-    image: "assets/images/ltbl.png"
+    image: "assets/images/ltbl.gif"
   },
   {
     title: "API de Restaurant - Full stack",

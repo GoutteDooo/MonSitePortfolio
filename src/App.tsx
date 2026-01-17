@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import Projets from "./pages/Projets";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import './App.css';
 
 const queryClient = new QueryClient();
 

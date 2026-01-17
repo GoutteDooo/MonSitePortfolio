@@ -24,27 +24,32 @@ const Index = () => {
   return (
     <div className="container-page pt-24">
       {/* Hero Section */}
-      <section className="mb-20 animate-fade-in">
-        <p className="text-subtle mb-4">Bienvenue sur le site web de</p>
-        <h1 className="heading-display text-foreground mb-6">Donovan Goudal</h1>
-        <p className="text-body text-muted-foreground max-w-2xl mb-8">
-          Je conçois des applications web modernes et performantes en combinant la
-          flexibilité de <span className="text-primary font-medium">React</span> et la puissance de{" "}
-          <span className="text-primary font-medium">C#.NET</span>.
-        </p>
-        <p className="text-body text-foreground max-w-2xl mb-10">
-          Mon objectif : transformer des architectures complexes en expériences
-          utilisateurs fluides et intuitives.
-        </p>
+      <section className="mb-20 animate-fade-in flex flex-align-center">
+        <div>
+          <p className="text-subtle mb-4">Bienvenue sur le site web de</p>
+          <h1 className="heading-display text-foreground mb-6">Donovan Goudal</h1>
+          <p className="text-body text-muted-foreground max-w-2xl mb-8">
+            Je conçois des applications web modernes et performantes en combinant la
+            flexibilité de <span className="text-primary font-medium">React</span> et la puissance de{" "}
+            <span className="text-primary font-medium">C#.NET</span>.
+          </p>
+          <p className="text-body text-foreground max-w-2xl mb-10">
+            Mon objectif : transformer des architectures complexes en expériences
+            utilisateurs fluides et intuitives.
+          </p>
 
-        <a
-          href="/cv-donovan-goudal.pdf"
-          download
-          className="btn-outline inline-flex items-center gap-2"
-        >
-          <Download className="w-4 h-4" />
-          Télécharger mon CV (PDF)
-        </a>
+          <a
+            href="/assets/cv.pdf"
+            download
+            className="btn-outline inline-flex items-center gap-2"
+            >
+            <Download className="w-4 h-4" />
+            Télécharger mon CV (PDF)
+          </a>
+        </div>
+        <div className="hero-img">
+          <img src="/assets/images/donovangoudal.jpg"/>
+        </div>
       </section>
 
       <div className="separator-warm" />
