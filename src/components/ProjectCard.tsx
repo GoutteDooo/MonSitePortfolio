@@ -19,7 +19,7 @@ interface ProjectCardProps {
 
 const statusColors = {
   "En développement": "bg-accent/20 text-accent",
-  "Terminé": "bg-primary/20 text-primary",
+  Terminé: "bg-primary/20 text-primary",
   "En pause": "bg-muted text-muted-foreground",
 };
 
@@ -58,11 +58,15 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
 
           <div className="mb-4">
-            <h4 className="text-sm font-medium text-muted-foreground mb-1">Objectif</h4>
+            <h4 className="text-sm font-medium text-muted-foreground mb-1">
+              Objectif
+            </h4>
             <p className="text-body text-foreground">{project.objective}</p>
           </div>
 
-          <div className="text-body text-muted-foreground mb-6">{project.description}</div>
+          <div className="text-body text-muted-foreground mb-6">
+            {project.description}
+          </div>
 
           {project.links && (
             <div className="flex items-center gap-4">

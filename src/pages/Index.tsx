@@ -24,31 +24,39 @@ const Index = () => {
   return (
     <div className="container-page pt-24">
       {/* Hero Section */}
-      <section className="mb-20 animate-fade-in flex flex-align-center">
+      <section className="mb-20 animate-fade-in flex flex-col lg:flex-row items-center">
         <div>
           <p className="text-subtle mb-4">Bienvenue sur le site web de</p>
-          <h1 className="heading-display text-foreground mb-6">Donovan Goudal</h1>
+          <h1 className="heading-display mb-2">Donovan Goudal</h1>
+          <h2
+            className="heading-section mb-6 text-primary"
+            style={{ fontStyle: "italic" }}
+          >
+            Développeur C#.NET
+          </h2>
           <p className="text-body text-muted-foreground max-w-2xl mb-8">
-            Je conçois des applications web modernes et performantes en combinant la
-            flexibilité de <span className="text-primary font-medium">React</span> et la puissance de{" "}
+            Je conçois des applications web modernes et performantes en
+            combinant la flexibilité de{" "}
+            <span className="text-primary font-medium">React</span> et la
+            puissance de{" "}
             <span className="text-primary font-medium">C#.NET</span>.
           </p>
           <p className="text-body text-foreground max-w-2xl mb-10">
-            Mon objectif : transformer des architectures complexes en expériences
-            utilisateurs fluides et intuitives.
+            Mon objectif : transformer des architectures complexes en
+            expériences utilisateurs fluides et intuitives.
           </p>
 
           <a
             href="/assets/cv.pdf"
             download
             className="btn-outline inline-flex items-center gap-2"
-            >
+          >
             <Download className="w-4 h-4" />
             Télécharger mon CV (PDF)
           </a>
         </div>
-        <div className="hero-img">
-          <img src="/assets/images/donovangoudal.jpg"/>
+        <div className="hero-img mt-20 lg:mt-0 border-2 rounded-md">
+          <img src="/assets/images/donovangoudal.jpg" />
         </div>
       </section>
 
@@ -56,7 +64,9 @@ const Index = () => {
 
       {/* Services Section */}
       <section className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
-        <h2 className="heading-section text-foreground mb-2">En quoi je peux vous aider</h2>
+        <h2 className="heading-section text-foreground mb-2">
+          En quoi je peux vous aider
+        </h2>
         <p className="text-subtle mb-10">
           Des solutions adaptées à vos besoins
         </p>
