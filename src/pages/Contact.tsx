@@ -1,5 +1,4 @@
-import { Mail, MapPin } from "lucide-react";
-import ContactForm from "@/components/ContactForm";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -12,49 +11,46 @@ const Contact = () => {
         </p>
       </section>
 
-      <div className="grid lg:grid-cols-3 gap-12">
-        <div className="lg:col-span-2">
-          <ContactForm />
+      <div className="card-warm max-w-md animate-slide-up space-y-6">
+        <div className="flex items-center gap-4">
+          <Mail className="w-6 h-6 text-primary shrink-0" />
+          <div className="min-w-0">
+            <p className="text-sm font-medium text-foreground">Email</p>
+            <a
+              href="mailto:goudal.donovan@gmail.com"
+              className="text-muted-foreground hover:text-primary transition-colors break-all"
+            >
+              goudal.donovan@gmail.com
+            </a>
+          </div>
         </div>
 
-        <aside className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
-          <div className="card-warm space-y-6">
-            <h3 className="font-serif text-lg font-medium text-foreground">
-              Informations de contact
-            </h3>
-
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-primary mt-0.5" />
-                <div>
-                  <p className="text-sm font-medium text-foreground">Email</p>
-                  <a
-                    href="mailto:goudal.donovan@gmail.com"
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    goudal.donovan@gmail.com
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5" />
-                <div>
-                  <p className="text-sm font-medium text-foreground">
-                    Localisation
-                  </p>
-                  <p className="text-sm text-muted-foreground">France</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-4 border-t border-border">
-              <p className="text-subtle">
-                Disponible pour des missions freelance et des collaborations.
-              </p>
-            </div>
+        <div className="flex items-center gap-4">
+          <Phone className="w-6 h-6 text-primary shrink-0" />
+          <div>
+            <p className="text-sm font-medium text-foreground">Téléphone</p>
+            <a
+              href="tel:+33769182218"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              07 69 18 22 18
+            </a>
           </div>
-        </aside>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <MapPin className="w-6 h-6 text-primary shrink-0" />
+          <div>
+            <p className="text-sm font-medium text-foreground">Localisation</p>
+            <p className="text-muted-foreground">Valenciennes, Nord</p>
+          </div>
+        </div>
+
+        <div className="pt-4 border-t border-border">
+          <p className="text-subtle">
+            Disponible pour des missions freelance et des collaborations.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import { Download, Code2, Rocket, Wrench } from "lucide-react";
+import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
 
 const Index = () => {
@@ -10,7 +11,7 @@ const Index = () => {
     },
     {
       icon: Rocket,
-      title: "Développement de projets web",
+      title: "Développement d'applications",
       description: "De la conception à la mise en production.",
     },
     {
@@ -20,30 +21,27 @@ const Index = () => {
         "Même après la livraison, nous restons en contact afin de maintenir le projet à jour.",
     },
   ];
+  
+  const descriptionText = "text-left text-body text-muted-foreground max-w-2xl mb-8";
 
   return (
     <div className="container-page pt-24">
       {/* Hero Section */}
-      <section className="mb-20 animate-fade-in flex flex-col lg:flex-row items-center">
-        <div>
+      <section className="mb-20 animate-fade-in flex flex-col md:flex-row items-center gap-12">
+        <div className="flex-1">
           <p className="text-subtle mb-4">Bienvenue sur le site web de</p>
-          <h1 className="heading-display mb-2">Donovan Goudal</h1>
+          <h1 className="text-5xl mb-2">Donovan Goudal</h1>
           <h2
-            className="heading-section mb-6 text-primary"
-            style={{ fontStyle: "italic" }}
+            className="text-2xl mb-6 text-primary"
           >
-            Développeur C#.NET
+            Développeur .NET
           </h2>
-          <p className="text-body text-muted-foreground max-w-2xl mb-8">
-            Je conçois des applications web modernes et performantes en
-            combinant la flexibilité de{" "}
-            <span className="text-primary font-medium">React</span> et la
-            puissance de{" "}
-            <span className="text-primary font-medium">C#.NET</span>.
-          </p>
-          <p className="text-body text-foreground max-w-2xl mb-10">
-            Mon objectif : transformer des architectures complexes en
-            expériences utilisateurs fluides et intuitives.
+          <p className={descriptionText}>Vous avez un bug qui persiste, et l'IA ne parvient pas à la résoudre ?</p>
+          <p className={descriptionText}>Vous aimeriez continuer cette application, mais vous avez l'impression de faire face à un mur au fur et à mesure que votre projet grandit ?</p>
+          <p className={descriptionText}>Je peux vous aider à y mettre de l'ordre.</p>
+          
+          <p className="link-warm mb-8 text-xl">
+            <Link to="/contact">Contactez-moi</Link>
           </p>
 
           <a
@@ -55,8 +53,8 @@ const Index = () => {
             Télécharger mon CV (PDF)
           </a>
         </div>
-        <div className="hero-img mt-20 lg:mt-0 border-2 rounded-md">
-          <img src="/assets/images/donovangoudal.jpg" />
+        <div className="shrink-0 w-64 lg:w-72 mx-auto md:mx-0">
+          <img src="/assets/images/donovangoudal.jpg" alt="Ma photo" className="w-full h-auto rounded-md border-2 border-border" />
         </div>
       </section>
 
