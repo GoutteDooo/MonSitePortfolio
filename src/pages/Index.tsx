@@ -29,13 +29,13 @@ const Index = () => {
       {/* Hero Section */}
       <section className="mb-20 animate-fade-in flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1">
-          <p className="text-subtle mb-4">Bienvenue sur le site web de</p>
+          <p className="text-subtle mb-4">Bienvenue sur le site de</p>
           <h1 className="text-5xl mb-2">Donovan Goudal</h1>
-          <h2
+          <p
             className="text-2xl mb-6 text-primary"
           >
             Développeur .NET
-          </h2>
+          </p>
           <p className={descriptionText}>Vous avez un bug qui persiste, et l'IA ne parvient pas à la résoudre ?</p>
           <p className={descriptionText}>Vous aimeriez continuer cette application, mais vous avez l'impression de faire face à un mur au fur et à mesure que votre projet grandit ?</p>
           <p className={descriptionText}>Je peux vous aider à y mettre de l'ordre.</p>
