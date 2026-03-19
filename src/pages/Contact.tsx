@@ -6,8 +6,9 @@ const Contact = () => {
       <section className="mb-16 animate-fade-in">
         <h1 className="heading-display text-foreground mb-4">Contact</h1>
         <p className="text-body text-muted-foreground max-w-2xl">
-          Vous avez un projet en tête ou une question ? N'hésitez pas à me
-          contacter. Je vous répondrai dans les plus brefs délais.
+          N'hésitez pas à me contacter. 
+          <br />
+          Réponse sous 24 heures par mail.
         </p>
       </section>
 

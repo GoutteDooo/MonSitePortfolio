@@ -2,37 +2,113 @@ import { Project } from "@/components/ProjectCard";
 
 const projects: Project[] = [
   {
-    title: "Jeu vidéo - The Last Conductor",
-    stack: ["Unity", "C#.NET"],
-    objective: "Créer une expérience divertissante et fluide à but commercial.",
+    title: "Jeu vidéo\nThe Last Conductor",
+    categories: ["Jeu vidéo"],
+    stack: ["Unity", "C#", ".NET"],
+    objective: "Progresser dans l'environnement .NET.",
     status: "En développement",
     description: (
       <>
-        Vous incarnez un ingénieur dans un monde cyberpunk en 2053. Il n'y a
-        plus de courant sur Terre.
-        <br />
-        Votre mission est de rétablir le courant grâce à votre G-Gun.
-        <br />
-        Des obstacles se dresseront sur votre épopée, serez-vous prêt à
-        affronter tous les dangers pour sauver l'humanité ?
+          Projet très intéressant car demande une gestion rigoureuse de l'architecture.
+          <br /><br />
+        <p className={"text-red-500"}>Code source privé car projet à but lucratif.</p>
       </>
     ),
     links: {
       demo: "https://gouttedo.itch.io/thelastconductor",
+        youtube: "https://youtu.be/cnQc5MYrOTE",
     },
     image: "assets/images/thelastconductor.jpg",
   },
   {
-    title: "Site e-commerce - Maison L",
-    stack: ["Shopify", "Liquid"],
+    title: "API Bibliotheque\nArchitecture MVC",
+    categories: ["Web", ".NET"],
+    stack: ["Razor", "C#", ".NET", "ASP.NET", "EFCore", "PostgreSQL"],
+    objective: "Concevoir et développer une API pour une fausse bibliothèque.",
+    status: "Terminé",
+    description: (
+        <>
+          API de Bibliothèque avec système de permission et base de données.
+          <br /><br />
+          Diagramme UML réalisé et architecture MVC intégrée.
+        </>
+    ),
+    links: {
+      youtube: "https://youtu.be/-tXCateN6B0",
+      github: "https://github.com/GoutteDooo/API-Bibliotheque",
+    },
+    image: "assets/images/api-bibliotheque.gif",
+  },
+  {
+    title: "API de Restaurant",
+    categories: ["Web", ".NET"],
+    stack: ["React", "C#", ".NET", "ASP.NET", "EFCore", "PostgreSQL"],
     objective:
-      "Créer un site e-commerce avec une interface fluide et intuitive.",
-    status: "En développement",
+        "Réaliser une API de gestion de commandes.",
+    status: "Terminé",
+    description: (
+        <>
+          Le but de cette API est de faire passer un restaurant qui serait encore au format papier au format numérique tout en gardant une interface simple, intuitive et rapide.
+        </>
+    ),
+    links: {
+      youtube: "https://youtu.be/Sm4Z8vRUB2E",
+      github: "https://github.com/GoutteDooo/RestauSimplon",
+    },
+    image: "assets/images/RestauSimplon.gif",
+  },
+  {
+    title: "Prototype de Jeu vidéo\nLet There Be Light",
+    categories: ["Jeu vidéo", ".NET"],
+    stack: ["C#", ".NET", "Unity"],
+    objective:
+      "Créer un jeu vidéo sous 4 jours.",
+    status: "Terminé",
     description: (
       <>
-        Solution e-commerce sur mesure avec gestion des stocks, paiements
-        sécurisés, et interface d'administration complète.
+          <strong>Difficulté principale :</strong>
+          <br />
+          Réussir à boucler le gameplay sans connaissance préalable du moteur Unity.
+        <br /><br />
       </>
+    ),
+    links: {
+      demo: "https://gouttedo.itch.io/let-there-be-light-proto",
+      github: "https://github.com/GoutteDooo/Let_There_Be_Light_Simplon",
+    },
+    image: "assets/images/ltbl.gif",
+  },
+  {
+    title: "Application Console\nDuel De Guerrier",
+    categories: [".NET"],
+    stack: ["C#", ".NET"],
+    objective:
+      "Développer une application console dans le but d'apprendre l'environnement .NET",
+    status: "Terminé",
+    description: (
+      <>
+      </>
+    ),
+    links: {
+      github: "https://github.com/GoutteDooo/DuelDeGuerrier",
+    },
+    image: "assets/images/DuelDeGuerrier.gif",
+  },
+  {
+    title: "Site e-commerce\nMaison L",
+    categories: ["Web"],
+    stack: ["Shopify", "Liquid"],
+    objective:
+        "Créer un site e-commerce avec une interface fluide et intuitive.",
+    status: "Terminé",
+    description: (
+        <>
+          Solution e-commerce sur mesure avec :
+          <br />
+          • gestion des stocks
+          <br />
+          • paiements sécurisés
+        </>
     ),
     links: {
       demo: "https://maison-l-3.myshopify.com",
@@ -40,26 +116,18 @@ const projects: Project[] = [
     image: "assets/images/maison-l.png",
   },
   {
-    title: "Jeu vidéo - Lulu's Quest",
+    title: "Jeu vidéo\nLulu's Quest",
+    categories: ["Jeu vidéo"],
     stack: ["Lua", "Pico-8"],
     objective:
-      "Créer une expérience divertissante rétro avec de grosses contraintes mémoire.",
+        "Créer une expérience divertissante rétro avec de grosses contraintes mémoire.",
     status: "Terminé",
     description: (
-      <>
-        Vous prenez le contrôle de deux personnages : Lulu et Hadès dont les
-        pouvoirs sont opposés.
-        <br />
-        Lulu est une fée : Elle peut créer des orbes lumineuses et ne se déplace
-        qu'à l'intérieur de celles-ci.
-        <br />
-        Hadès est un ténébreux : Il peut éteindre les orbes lumineuses, et périt
-        s'il en touche une.
-        <br />
-        Votre mission est d'atteindre le coeur de la planète, là où les deux
-        pourront le réparer et sauver le monde. Serez-vous prêt à affronter tous
-        les obstacles qui se dresseront sur leur chemin ?
-      </>
+        <>
+          Créer un jeu rétro avec de grosses contraintes mémoires. (quelques kB)
+          <br /><br />
+          Forcé de devoir optimiser car manque de place, ce projet a été très intéressant à réaliser.
+        </>
     ),
     links: {
       demo: "https://gouttedo.itch.io/lulus-quest",
@@ -68,129 +136,14 @@ const projects: Project[] = [
     image: "assets/images/lulu-pico.png",
   },
   {
-    title: "API Bibliotheque - Architecture MVC",
-    stack: ["C#", ".NET", "ASP.NET", "EFCore", "PostgreSQL"],
-    objective: "Concevoir et développer une API pour une fausse bibliothèque.",
-    status: "Terminé",
-    description: (
-      <>
-        Le principe était de créer une API pour les membres de la bibliothèque
-        afin qu'ils puissent emprunter, rendre ou réserver les livres présents
-        dans la base de données.
-        <br />
-        Trois rôles sont distribués : Membre, Employé et Administrateur.
-        <br />
-        Les employés peuvent gérer les réservations, valider un emprunt, valider
-        un rendu, gérer les stocks.
-        <br />
-        Les Administrateurs ont les mêmes droits que les employés et peuvent
-        également gérer ceux-ci. Ils peuvent en ajouter ou les retirer de la
-        base de données.
-        <br />
-        Projet réalisé en formation chez Simplon
-      </>
-    ),
-    links: {
-      demo: "https://youtu.be/-tXCateN6B0",
-      github: "https://github.com/GoutteDooo/API-Bibliotheque",
-    },
-    image: "assets/images/api-bibliotheque.gif",
-  },
-  {
-    title: "Prototype de Jeu vidéo - Let There Be Light",
-    stack: ["C#", ".NET", "Unity"],
-    objective:
-      "Concevoir et créer un prototype de jeu vidéo fun sous un délai extrêmement court de 4 jours.",
-    status: "Terminé",
-    description: (
-      <>
-        Le Projet a été réalisée en équipe. J'ai collaboré avec Hazel Cunuder,
-        ma camarade de formation.
-        <br />
-        La difficulté principale fut de réussir à boucler le gameplay. Nous y
-        sommes parvenus dés lors que nous avons eu l'idée de le faire via une
-        state machine.
-        <br />
-        La state machine, qui agit en tant que Singleton pour être toujours
-        présente, change d'état à chaque phase de jeu : Playing, Victory,
-        Defeat, Menu, Pause, Completed et d'autres...
-        <br />
-        Projet réalisé en formation chez Simplon
-      </>
-    ),
-    links: {
-      demo: "Pas de lien pour le moment",
-      github: "https://github.com/GoutteDooo/Let_There_Be_Light_Simplon",
-    },
-    image: "assets/images/ltbl.gif",
-  },
-  {
-    title: "API de Restaurant - Full stack",
-    stack: ["C#", ".NET", "ASP.NET", "React", "EFCore", "PostgreSQL"],
-    objective:
-      "Concevoir et développer une API intuitive pour un faux restaurant.",
-    status: "Terminé",
-    description: (
-      <>
-        RestauSimplon est un restaurant qui souhaite digitaliser la gestion de
-        ses commandes, actuellement effectuée sur papier.
-        <br />
-        Ce projet a pour but de créer une API REST permettant de gérer les
-        articles du menu, les clients et les commandes, tout en automatisant les
-        calculs et en assurant une meilleure traçabilité.
-        <br />
-        Projet réalisé en formation chez Simplon
-      </>
-    ),
-    links: {
-      demo: "https://youtu.be/IiqWEZ-ZDlk",
-      github: "https://github.com/GoutteDooo/RestauSimplon",
-    },
-    image: "assets/images/RestauSimplon.gif",
-  },
-  {
-    title: "Application Console - Duel De Guerrier",
-    stack: ["C#", ".NET"],
-    objective:
-      "Développer une application console dans le but d'apprendre l'environnement .NET",
-    status: "Terminé",
-    description: (
-      <>
-        Dans cette app, vous pouvez créer des fourmis qui s'affrontent dans une
-        arène.
-        <br />
-        L'app gère une base de données dynamique qui s'enregistre dans un
-        fichier json si vous le souhaitez.
-        <br />
-        Le système de combat est dynamique, une fois que deux fourmis
-        s'affrontent, vous voyez tout le combat se dérouler jusqu'au bout.
-        <br />
-        Un système de championnat a été mis en place. Si vous avez plus de deux
-        fourmis dans l'arène, celles-ci s'affrontent deux par deux jusqu'à ce
-        qu'il n'en reste qu'une seule victorieuse.
-        <br />
-        Projet réalisé en formation chez Simplon
-      </>
-    ),
-    links: {
-      demo: "Pas de lien pour le moment",
-      github: "https://github.com/GoutteDooo/DuelDeGuerrier",
-    },
-    image: "assets/images/api-bibliotheque.png",
-  },
-  {
-    title: "Site Web Front end - Les Ecuries de la Selle",
+    title: "Site vitrine\nEcuries",
+    categories: ["Web"],
     stack: ["React", "SCSS"],
     objective:
       "Concevoir et développer à partir de zéro la partie front-end d'un site web pour une écurie",
     status: "Terminé",
     description: (
       <>
-        Partie front-end du site web de "Les Ecuries de la Selle" réalisée avec
-        React et SCSS.
-        <br />
-        Le site est entièrement responsive et est hébergé par Netlify, ce qui
-        permet à sa propriétaire de n'y mettre aucun frais !
       </>
     ),
     links: {
@@ -200,18 +153,14 @@ const projects: Project[] = [
     image: "assets/images/lesecuriesdelaselle.png",
   },
   {
-    title: "Site Web Front end - Intellicook",
+    title: "Site vitrine\nRecettes de cuisine",
+    categories: ["Web"],
     stack: ["React", "SCSS"],
     objective:
-      "Concevoir et développer en équipe de 4 à partir de zéro la partie front-end d'un site web pour une fausse entreprise",
+      "Réaliser en équipe de 4 la partie front-end d'un site web de recettes de cuisine",
     status: "Terminé",
     description: (
       <>
-        Partie front-end du site web de la fake entreprise "Intellicook"
-        réalisée avec React et SCSS.
-        <br />
-        Projet réalisé en équipe de 4, où l'esprit d'équipe et la communication
-        étaient de mise.
       </>
     ),
     links: {

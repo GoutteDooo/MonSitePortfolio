@@ -41,7 +41,7 @@ const Index = () => {
           <p className={descriptionText}>Je peux vous aider à y mettre de l'ordre.</p>
           
           <p className="link-warm mb-8 text-xl">
-            <Link to="/contact">Contactez-moi</Link>
+            <Link to="/contact" className={"underline"}>Contactez-moi</Link>
           </p>
 
           <a
