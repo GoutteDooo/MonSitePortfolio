@@ -18,7 +18,7 @@ const projects: Project[] = [
       demo: "https://gouttedo.itch.io/thelastconductor",
         youtube: "https://youtu.be/cnQc5MYrOTE",
     },
-    image: "assets/images/thelastconductor.jpg",
+    image: "assets/images/TLC.gif",
   },
   {
     title: "API Bibliotheque\nArchitecture MVC",
