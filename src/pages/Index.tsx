@@ -32,7 +32,7 @@ const Index = () => {
           <p className="text-subtle mb-4">Bienvenue sur le site de</p>
           <h1 className="text-5xl mb-2">Donovan Goudal</h1>
           <p
-            className="text-2xl mb-6 text-primary"
+            className="text-2xl mb-6 text-primary "
           >
             Développeur .NET
           </p>

@@ -2,25 +2,6 @@ import { Project } from "@/components/ProjectCard";
 
 const projects: Project[] = [
   {
-    title: "Jeu vidéo\nThe Last Conductor",
-    categories: ["Jeu vidéo"],
-    stack: ["Unity", "C#", ".NET"],
-    objective: "Progresser dans l'environnement .NET.",
-    status: "En développement",
-    description: (
-      <>
-          Projet très intéressant car demande une gestion rigoureuse de l'architecture.
-          <br /><br />
-        <p className={"text-red-500"}>Code source privé car projet à but lucratif.</p>
-      </>
-    ),
-    links: {
-      demo: "https://gouttedo.itch.io/thelastconductor",
-        youtube: "https://youtu.be/cnQc5MYrOTE",
-    },
-    image: "assets/images/TLC.gif",
-  },
-  {
     title: "API Bibliotheque\nArchitecture MVC",
     categories: ["Web", ".NET"],
     stack: ["Razor", "C#", ".NET", "ASP.NET", "EFCore", "PostgreSQL"],
@@ -38,6 +19,24 @@ const projects: Project[] = [
       github: "https://github.com/GoutteDooo/API-Bibliotheque",
     },
     image: "assets/images/api-bibliotheque.gif",
+  },  {
+    title: "Jeu vidéo\nThe Last Conductor",
+    categories: ["Jeu vidéo"],
+    stack: ["Unity", "C#", ".NET"],
+    objective: "Progresser dans l'environnement .NET.",
+    status: "En développement",
+    description: (
+        <>
+          Projet très intéressant car demande une gestion rigoureuse de l'architecture.
+          <br /><br />
+          <p className={"text-red-500"}>Code source privé car projet à but lucratif.</p>
+        </>
+    ),
+    links: {
+      demo: "https://gouttedo.itch.io/thelastconductor",
+      youtube: "https://youtu.be/cnQc5MYrOTE",
+    },
+    image: "assets/images/TLC.gif",
   },
   {
     title: "API de Restaurant",
