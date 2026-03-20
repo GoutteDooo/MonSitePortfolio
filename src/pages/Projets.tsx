@@ -2,7 +2,7 @@ import { useState } from "react";
 import ProjectCard, { ProjectCategory } from "@/components/ProjectCard";
 import projects from "@/data/projectsData";
 
-const CATEGORIES: ("Tous" | ProjectCategory)[] = ["Tous", "Web", "Jeu vidéo", ".NET"];
+const CATEGORIES: ("Tous" | ProjectCategory)[] = ["Tous", ".NET", "Web", "Jeu vidéo"];
 
 const Projets = () => {
   const [activeFilter, setActiveFilter] = useState<"Tous" | ProjectCategory>("Tous");

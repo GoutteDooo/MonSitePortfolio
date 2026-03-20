@@ -9,6 +9,7 @@ export interface Project {
   stack: string[];
   objective: string;
   status: "En développement" | "Terminé" | "En pause";
+  //@ts-ignore
   description: html;
   links?: {
     demo?: string;
