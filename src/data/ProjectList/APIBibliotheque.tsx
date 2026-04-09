@@ -16,6 +16,7 @@ export const APIBibliotheque: Project = {
   links: {
     youtube: "https://youtu.be/-tXCateN6B0",
     github: "https://github.com/GoutteDooo/API-Bibliotheque",
+    demo: "https://api-bibliotheque-fqehhed3ctcvhydg.francecentral-01.azurewebsites.net/"
   },
   image: "assets/images/api-bibliotheque.gif",
 };
